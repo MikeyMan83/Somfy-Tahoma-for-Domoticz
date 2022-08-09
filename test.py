@@ -1,9 +1,9 @@
 #Variables:
 
-pin 			= "2017-8871-5701"
+pin 			= "2111-8111-5111"
 port 			= "8443"
 baseUrl 		= f"https://gateway-{pin}.local:{port}/enduser-mobile-web/1/enduserAPI"
-token			= "62ecd0f3cdda9a49c2c1"
+token			= "62abc0d3efgh9b49d2e1"
     
 getapiversion 	= f"{baseUrl}/apiVersion"
 getdevices		= f"{baseUrl}/setup/devices"
