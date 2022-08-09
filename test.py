@@ -59,4 +59,11 @@ response = requests.request("GET", getdevices, headers=headers, data=payload, ve
 #Get gateway
 #response = requests.request("GET", getgateway, headers=headers, data=payload, verify=False)
 
-print (response.text)
+#print (response.text)
+#print (type(response.text))
+#print (isinstance(response.text, str))
+
+output_file = json.dumps(response.text, indent=4)
+
+with open('response.json', 'w') as outfile:
+   outfile.write(output_file)
