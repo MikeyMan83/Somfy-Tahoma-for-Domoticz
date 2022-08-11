@@ -16,6 +16,9 @@ Now trying to get the API calls to run from Python script.
 
 Again; i'm absolutely rubbish with code. So hoping someone will help out here.
 
+Original plugins written by:
+Original script was written by Nonolk : https://github.com/nonolk/domoticz_tahoma_blind
+Adapted by MadPatrick: https://github.com/MadPatrick/somfy
 
 Also taking some inspiration from the Home Assistant plugin:
 https://github.com/iMicknl/ha-tahoma
