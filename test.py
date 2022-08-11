@@ -1,4 +1,6 @@
-Credits to 
+# Credits to 
+# Nonolk: https://github.com/nonolk/domoticz_tahoma_blind
+# Madpatrick: https://github.com/MadPatrick/somfy
 
 
 
