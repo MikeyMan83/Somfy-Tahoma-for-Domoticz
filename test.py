@@ -1,10 +1,10 @@
 #Variables:
 
-pin 			= "2111-8111-5111"
-port 			= "8443"
-baseUrl 		= f"https://gateway-{pin}.local:{port}/enduser-mobile-web/1/enduserAPI"
-token			= "62abc0d3efgh9b49d2e1"
-    
+pin 			    = "2017-8871-5701"
+port 			    = "8443"
+baseUrl 		    = f"https://gateway-{pin}.local:{port}/enduser-mobile-web/1/enduserAPI"
+token			    = "62ecd0f3cdda9a49c2c1"
+
 #Events    
 fetchevents 	    = f"{baseUrl}/events/:listenerId/fetch" #Post
 unregisterlistener  = f"{baseUrl}/events/:listenerId/unregister" #Post
@@ -63,7 +63,9 @@ response = requests.request("GET", getdevices, headers=headers, data=payload, ve
 #print (type(response.text))
 #print (isinstance(response.text, str))
 
-output_file = json.dumps(response.text, indent=4)
 
-with open('response.json', 'w') as outfile:
-   outfile.write(output_file)
+output_file = json.loads(response.text)
+print (json.dumps(output_file, indent=4))
+
+with open('response.json', 'w', encoding='utf-8') as outfile:
+   json.dump(output_file, outfile, indent=4)
