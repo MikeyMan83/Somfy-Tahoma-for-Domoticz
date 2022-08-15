@@ -1,0 +1,4 @@
+[Connection]
+pin     = 2000-0000-0000
+port    = 8443
+token	  = 73fde0f3cdda9a49d3d2
